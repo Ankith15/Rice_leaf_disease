@@ -5,6 +5,7 @@ import numpy as np
 from PIL import Image
 import mlflow
 
+
 @st.cache_resource
 def load_trained_model():
     model = load_model(r'F:\\machine learning\\Rice_leaf_Disease\Disease_dtct (1).h5')
