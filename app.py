@@ -10,7 +10,7 @@ import mlflow.tensorflow
 from dotenv import load_dotenv
 load_dotenv()
 
-fun = os.getenv('RUN')
+fun = os.getenv('anki')
 print(fun)
 
 @st.cache_resource
