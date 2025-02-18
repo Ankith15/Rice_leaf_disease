@@ -20,7 +20,6 @@ def load_trained_model():
 
 
 fun_id = f"runs:/{fun}/model"
-print(run_id)
 
 model = mlflow.tensorflow.load_model(fun_id)
 
