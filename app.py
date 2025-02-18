@@ -12,7 +12,8 @@ def load_trained_model():
     return model
 
 
-run_id = "runs:/f925f6ac2ac24ee48f6ee7da9b5cb536/model"
+run_id = "runs:/9510bf99f27d42f5850aabe6e0cf6310/model"
+
 model = mlflow.tensorflow.load_model(run_id)
 
 
