@@ -4,6 +4,7 @@ from tensorflow.keras.preprocessing import image
 import numpy as np
 from PIL import Image
 import mlflow
+import mlflow.tensorflow
 
 
 @st.cache_resource
