@@ -21,7 +21,7 @@ def load_trained_model():
 
 # fun_id = f"runs:/{fun}/model"
 
-model =load_model(r'F:\\machine learning\\Rice_leaf_Disease\Disease_dtct (1).h5')
+model =load_model(r'https://github.com/Ankith15/Rice_leaf_disease/blob/main/Disease_dtct%20(1).h5')
 
 
 class_labels = ["Rice_Blast","Bacterial_leaf_blight", "Healthy_leaf", "Tungro"]
