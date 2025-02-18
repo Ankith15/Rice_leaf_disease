@@ -19,10 +19,10 @@ def load_trained_model():
     return model
 
 
-run_id = f"runs:/{fun}/model"
+fun_id = f"runs:/{fun}/model"
 print(run_id)
 
-model = mlflow.tensorflow.load_model(run_id)
+model = mlflow.tensorflow.load_model(fun_id)
 
 
 class_labels = ["Rice_Blast","Bacterial_leaf_blight", "Healthy_leaf", "Tungro"]
