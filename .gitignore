@@ -2,6 +2,8 @@
 __pycache__/
 *.py[cod]
 *$py.class
+split_leaf
+mlruns
 
 # C extensions
 *.so
