@@ -1,3 +1,5 @@
+
+import os
 import streamlit as st
 from tensorflow.keras.models import load_model
 from tensorflow.keras.preprocessing import image
@@ -5,7 +7,11 @@ import numpy as np
 from PIL import Image
 import mlflow
 import mlflow.tensorflow
+from dotenv import load_dotenv
+load_dotenv()
 
+fun = os.getenv('RUN')
+print(fun)
 
 @st.cache_resource
 def load_trained_model():
@@ -13,7 +19,8 @@ def load_trained_model():
     return model
 
 
-run_id = "runs:/9510bf99f27d42f5850aabe6e0cf6310/model"
+run_id = f"runs:/{fun}/model"
+print(run_id)
 
 model = mlflow.tensorflow.load_model(run_id)
 
