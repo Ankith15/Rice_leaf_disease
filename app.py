@@ -19,9 +19,9 @@ def load_trained_model():
     return model
 
 
-fun_id = f"runs:/{fun}/model"
+# fun_id = f"runs:/{fun}/model"
 
-model = mlflow.tensorflow.load_model(fun_id)
+model =load_model(r'F:\\machine learning\\Rice_leaf_Disease\Disease_dtct (1).h5')
 
 
 class_labels = ["Rice_Blast","Bacterial_leaf_blight", "Healthy_leaf", "Tungro"]
